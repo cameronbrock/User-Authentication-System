@@ -1,0 +1,14 @@
+
+html, body {
+	background-color: #537552;
+	height: 100%;
+}
+
+.myblog-panel {
+	background-color: white;
+	border-radius: 10px;
+}
+
+#invisible element {
+	
+}

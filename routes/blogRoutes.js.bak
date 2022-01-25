@@ -1,0 +1,19 @@
+
+const express = require('express');
+const blogController = require('../controllers/blogController');
+
+const router = express.Router();
+
+// Profile
+/*
+router.get('/view/:userHandle', (req, res) => {
+	res.render('blogpage', { handle: req.params.userHandle });
+});
+*/
+
+router.get('/view/:userHandle', blogController.viewblog);
+router.get('/:userHandle', (req, res) => res.redirect('/blog/view/' + req.params.userHandle));
+
+//router.get('/:userHandle', blogController.viewblog);
+
+module.exports = router;

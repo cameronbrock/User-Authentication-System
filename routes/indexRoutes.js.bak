@@ -1,0 +1,25 @@
+
+const express = require('express');
+const indexController = require('../controllers/indexController.js');
+
+const router = express.Router();
+
+//const isSignedIn = true;
+
+// Index pages
+/*
+router.get('/', (req, res) => {
+	//res.send('<h1>Penis</h1');
+	if (isSignedIn) {
+		res.redirect('/home');
+	}
+	else {
+		res.redirect('/signup');
+	}
+});
+*/
+
+router.get('/', indexController.landingpage);
+router.get('/home', indexController.homepage);
+
+module.exports = router;

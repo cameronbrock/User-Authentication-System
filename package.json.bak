@@ -1,0 +1,27 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "Microblogging social media website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+	"generateNewSecretKey": "node auth/generateNewSecretKey.js"
+	"generateDbSchema": "node database/generateDbSchema.js"
+  },
+  "author": "Cameron Brock",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.10.7",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "geoip-lite": "^1.4.3",
+    "node-cache": "^5.1.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1"
+  }
+}

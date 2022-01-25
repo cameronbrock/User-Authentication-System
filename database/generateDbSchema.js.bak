@@ -1,0 +1,4 @@
+
+userTable = require('./tables/userTable.js');
+
+userTable.createTable();

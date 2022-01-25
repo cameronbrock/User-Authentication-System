@@ -1,0 +1,23 @@
+
+<!doctype html>
+
+<html>
+
+<head>
+	<title><%= username %> | MyBlog</title>
+	<link rel="stylesheet" type="text/css" href="/styles/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/styles/css/blogpage.css">
+</head>
+
+<body>
+
+<dir id="user-info-panel" class="myblog-panel">
+	<h1><%= username %></h1>
+	<h5>@<%= handle %></h5>
+	Followers: <%= num_followers %>
+	Following: <%= num_following %>
+</dir>
+
+
+</body>
+</html>

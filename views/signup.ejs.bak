@@ -1,0 +1,61 @@
+
+<!doctype html>
+
+<head>
+	<title>MyBlog -- Signup or login</title>
+	<link rel="stylesheet" type="text/css" href="/styles/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/styles/css/signup.css">
+</head>
+
+<% if (error) { %>
+	<div class="error-msg-box">
+		<div class="error-msg"text"><%= error %></div>
+	</div>
+<% } %>
+
+
+<div id="signup-login-switch-buttons">
+	<div id="signup-button" class="signup-login-btn">
+		<h1>Sign up</h1>
+	</div>
+	<div id="login-button" class="signup-login-btn non-selected-btn">
+		<h1>Log in</h1>
+	</div>
+</div>
+
+
+<div id="signup-login-panel" class="myblog-panel">
+
+	<div id="signup-form" class="">
+		<h2>Signup:</h2>
+		<form method="POST" action="/signup/create_account" enctype="application/JSON">
+			Username
+			<input name="username" type="text" id="signup-username" class="signup-input"><br/>
+			User handle:
+			@<input name="handle" type="text" id="signup-handle" class=signup-input"><br/>
+			Email:
+			<input name="email" type="email" id="signup-email" class="signup-input"><br/>
+			Password:
+			<input name="password1" type="password" id="signup-password1" class="signup-input signup-password-input"><br/>
+			Re-type password:
+			<input name="password2" type="password" id="signup-password2" class="signup-input signup-password-input"><br/>
+			Password status: <span id="password-status"></span><br/>
+			Email status: <span id="email-status"></span><br/>
+			Submit button status: <span id="submit-status"></span><br/>
+			<input id="signup-submit-btn" type="submit" value="submit">
+		</form>
+	</div>
+	<div id="login-form" class="invisible-element">
+		<h2>Log in:</h2>
+		<form method="POST" action="/login" enctype="application/JSON">
+			Username<br/>
+			<input name="username" type="text" id="login-username" class="signup-input"><br/>
+			Password<br/>
+			<input name="password" type="password" id="login-password" class="signup-input"><br/>
+			<input id="login-submit-btn" type="submit" value="submit">
+		</form>
+	</div>
+</div>
+
+
+<script src="/scripts/signup.js"></script>

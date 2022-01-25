@@ -1,0 +1,8 @@
+
+#user-info-panel {
+	background-color: white;
+	width: 350px;
+	height: 95%;
+	
+	border-radius: 10px;
+}

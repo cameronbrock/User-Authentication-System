@@ -1,0 +1,33 @@
+{
+	"default_timezone": "Europe/London",
+	"default_UTC_offset": "0000",
+	"view_engine": "ejs",
+	"port": 1337,
+	"environment_variables": [
+		"MYBLOG_DATABASE",
+		"MYBLOG_HOST",
+		"MYBLOG_IP_TEST",
+		"MYBLOG_PASSWORD",
+		"MYBLOG_PORT",
+		"MYBLOG_SECRET_KEY",
+		"MYBLOG_USER"
+	],
+	"encryption": {
+		"num_bcrypt_salt_rounds": 10,
+		
+		"secret_key_length": 256,
+		"secret_key_encoding": "base64",
+		
+		"user_session_id_length": 128,
+		"user_session_id_encoding": "base64"
+	},
+	"cache": {
+		"std_ttl": 315360000000,
+		"check_period": 31536000000
+	},
+	"user_cache": {
+		"std_ttl": 60000,
+		"check_period": 1000
+	},
+	"debug": true
+}

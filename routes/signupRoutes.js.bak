@@ -1,0 +1,17 @@
+
+var bodyParser = require('body-parser');
+
+const express = require('express');
+const signupController = require('../controllers/signupController.js');
+
+const router = express.Router();
+
+//var urlencodedParser = bodyParser.urlencoded({ extended: false });
+
+router.get('/', signupController.index);
+
+//router.post('/create_account', urlencodedParser, signupController.createAccount);
+
+router.post('/create_account', signupController.createAccount);
+
+module.exports = router;

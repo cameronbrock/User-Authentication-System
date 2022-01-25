@@ -1,0 +1,39 @@
+
+.signup-login-btn {
+	background-color: white;
+	flex: 1;
+	border-radius: 10px;
+}
+
+#signup-login-switch-buttons {
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	width: 500px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+	bottom: 0;
+}
+
+#signup-login-panel {
+	position: relative;
+	height: 500px;
+	padding-top: 10px;
+	padding-left: 20px;
+	margin-top: -20px;
+	z-index: 2;
+}
+
+.non-selected-btn {
+	background-color: gray;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.selected-btn {
+	background-color: white;
+	z-index: 2;
+	cursor: default;
+}
+
